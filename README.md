@@ -23,7 +23,9 @@ Users need to process experimental data as required for training or testing data
 (3) get protein feature AAC,3-mer and 4-mer by BioSeq-Analysis2.0
 
 (4) predict a new lncRNA-protein pair
-'python LGFC-CNN -dataset=21850'
+
+`python LGFC-CNN -dataset=21850`
+
 where RPI21850 is lncRNA-protein interaction dataset, and IPMiner will LGFC-CNN will train and test for it. you can also choose other datasets,
 such as RPI7317 and RPI1847.
 ## Reference
