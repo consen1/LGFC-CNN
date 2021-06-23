@@ -307,7 +307,7 @@ def get_macprodata(profea,dataset):
         proDic[L[0]] = L[1:]
     return proDic
 
-def CNNBiGRU(lnc_window_size,pro_window_size,lnc_glowindow,pro_glowindow,
+def LGFC_CNN(lnc_window_size,pro_window_size,lnc_glowindow,pro_glowindow,
                                     train_lnc_data,train_pro_data,train_glolnc_data,train_glopro_data,train_mac1_data,train_mac2_data,Y_train,
                                     val_lnc_data,val_pro_data,val_glolnc_data,val_glopro_data,val_mac1_data,val_mac2_data,Y_val,
                                     test_lnc_data,test_pro_data,test_glolnc_data,test_glopro_data,test_mac1_data,test_mac2_data,Y_test,real_labels):
@@ -584,7 +584,7 @@ def newwaycon(dataname):
             train_label_new.append(1)
 
 
-    accuracy1,model1 = CNNBiGRU(lnc_window_size,pro_window_size,lnc_glowindow,pro_glowindow,
+    accuracy1,model1 = LGFC_CNN(lnc_window_size,pro_window_size,lnc_glowindow,pro_glowindow,
                                 train_lnc_data,train_pro_data,train_glolnc_data,train_glopro_data,train_mac1_data,train_mac2_data,Y_train,
                                 val_lnc_data,val_pro_data,val_glolnc_data,val_glopro_data,val_mac1_data,val_mac2_data,Y_val,
                                 test_lnc_data,test_pro_data,test_glolnc_data,test_glopro_data,test_mac1_data,test_mac2_data,Y_test,real_labels)
